@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function init(){
+        let arr = [];
+        for (let i=0;i<5;i++){
+            let a =parseInt(prompt('nhap so nguyen bat ki'))
+            arr.push(a);
+        }
+        document.write(arr +'<br>')
+        let aray = arr.sort(function (a,b) {return(a-b)});
+        document.write(aray + '<br>' );
+        document.write(arr.reverse());
+    }
+    init();
+</script>
+
+</body>
+</html>
